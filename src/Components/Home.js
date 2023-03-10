@@ -5,9 +5,10 @@ import { logout } from "../store";
 const Home = () => {
   const { auth } = useSelector((state) => state);
   const dispatch = useDispatch();
+
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Quisqueya Soul Naturals</h1>
       <div>Welcome !!</div>
     </div>
   );

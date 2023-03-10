@@ -11,7 +11,16 @@ form > * {
   margin: 1rem;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-around;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none
+}
+
+#QSNnav {
+  margin: auto 2%;
 }
