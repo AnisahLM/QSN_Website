@@ -3,7 +3,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Nav from "./Nav";
 import { useSelector, useDispatch } from "react-redux";
-import { loginWithToken } from "../store";
+import { loginWithToken, fetchProducts } from "../store";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -12,6 +12,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(loginWithToken());
+    dispatch(fetchProducts);
   }, []);
 
   return (

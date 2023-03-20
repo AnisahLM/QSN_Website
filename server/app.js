@@ -15,6 +15,7 @@ app.get("/", (req, res) =>
 );
 
 app.use("/api/auth", require("./api/auth"));
+app.use("/api/products", require("./api/products"));
 app.use("https://forms.googleapis.com/v1/forms", require("./api/forms"));
 
 module.exports = app;
